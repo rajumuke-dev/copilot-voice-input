@@ -24,7 +24,13 @@ the network except the final text you send to Copilot.
 - 🎧 **Choose your input**: any microphone, or loopback (e.g. BlackHole) for meeting audio
 - 🔇 **Noise handling**: voice-activity detection and optional denoise
 
-<!-- TODO: add demo GIF here: ![Demo](docs/demo.gif) -->
+<div align="center">
+
+![Demo](docs/demo.gif)
+
+<sub>Illustrative animation of the dictate flow (not a screen recording).</sub>
+
+</div>
 
 ## Quick start
 1. Install the requirements below (whisper-cpp, a model, microphone permission).
