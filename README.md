@@ -1,8 +1,30 @@
-# Copilot Voice Input (IntelliJ IDEA)
+<div align="center">
 
-Speak to GitHub Copilot Chat instead of typing. Audio is recorded and transcribed locally with
-[whisper.cpp](https://github.com/ggml-org/whisper.cpp); nothing is sent over the network except the final text you
-send to Copilot.
+# 🎙️ Copilot Voice Input
+
+**Talk to GitHub Copilot Chat in IntelliJ IDEA. 100% local, open source.**
+
+[![License: MIT](https://img.shields.io/github/license/rajumuke-dev/copilot-voice-input)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-macOS%20(Apple%20Silicon)-lightgrey)](#requirements)
+[![IntelliJ](https://img.shields.io/badge/IntelliJ%20IDEA-2026.2%2B-blue)](#requirements)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Stars](https://img.shields.io/github/stars/rajumuke-dev/copilot-voice-input?style=social)](https://github.com/rajumuke-dev/copilot-voice-input)
+
+</div>
+
+Think faster than you type? Click the mic, speak your prompt, and it lands in Copilot Chat.
+Transcription runs on [whisper.cpp](https://github.com/ggml-org/whisper.cpp) on your machine, so nothing is sent over
+the network except the final text you send to Copilot.
+
+## ✨ Features
+- 🎤 **One-click dictation**: mic button in the Copilot Chat title, or ⌘⌥V
+- 🚀 **Dictate and send**: ⌘⌥⇧V
+- 🙌 **Hands-free mode**: say "turn on the mic", speak, then "done" to send or "cancel" to discard
+- 🔒 **Private by design**: local whisper.cpp, no cloud speech service, no transcript logging
+- 🎧 **Choose your input**: any microphone, or loopback (e.g. BlackHole) for meeting audio
+- 🔇 **Noise handling**: voice-activity detection and optional denoise
+
+<!-- TODO: add demo GIF here: ![Demo](docs/demo.gif) -->
 
 ## Quick start
 1. Install the requirements below (whisper-cpp, a model, microphone permission).
@@ -55,6 +77,14 @@ Source is in `src/main/java/com/rajumuke/voice`.
 ## Contributing and security
 Fork, branch, and open a Pull Request; see [CONTRIBUTING.md](CONTRIBUTING.md). Report vulnerabilities privately per
 [SECURITY.md](SECURITY.md). Licensed under [MIT](LICENSE).
+
+## Roadmap
+- [x] macOS (Apple Silicon)
+- [ ] Windows / Linux
+- [ ] Prebuilt release zip (no local build needed)
+- [ ] More languages (multilingual models)
+
+Ideas? [Open an issue](https://github.com/rajumuke-dev/copilot-voice-input/issues).
 
 ## Known limitations
 Tested with synthetic speech and unit tests; behaviour with real microphones and accents may vary.
